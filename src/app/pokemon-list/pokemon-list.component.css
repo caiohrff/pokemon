@@ -11,6 +11,15 @@
     display: grid;
     text-align: center;
 }
+
+.box:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition-delay: 0.2s;
+}
+
 .pokemon-grid .box img{
     max-width: 100px;
     display: block;

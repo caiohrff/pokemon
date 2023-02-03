@@ -20,12 +20,13 @@ export class PokemonListComponent implements OnInit {
   getPokemons(){
     this.dataService.getPokemons(10, this.page + 0)
     .subscribe((response: any) =>{
+      //base para paginação de pokemons
       this.totalPokemons = response.count;
+      //base para paginação de pokemons
       response.results.forEach((result: any) =>{
         this.dataService.getMoreData(result.name)
         .subscribe((uniqResponse: any) =>{
           this.pokemons.push(uniqResponse);
-          console.log(this.pokemons);
         })
       })
     })
