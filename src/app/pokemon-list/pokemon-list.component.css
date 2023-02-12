@@ -3,6 +3,7 @@
     grid-gap: 16px;
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    background-color: #202020;
 }
 .pokemon-grid .box{
     width: 100%;
@@ -10,14 +11,11 @@
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
     display: grid;
     text-align: center;
+    color: white;
 }
 
 .box:hover{
     cursor: pointer;
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    transition-delay: 0.2s;
 }
 
 .pokemon-grid .box img{
